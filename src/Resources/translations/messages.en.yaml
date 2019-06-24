@@ -1,0 +1,15 @@
+sylius:
+    ui:
+        fees: Fees
+        no_fees: No fees applied
+        fee_total: Fee Total
+positibe_fee_plugin:
+    ui:
+        name: Name
+        amount: Amount
+        amount_type: Amount Type
+        percent: Percent
+        flat_number: Flat Number
+        multiplied: Multiplied
+        help_description: Help Description
+        included_in_price: Included In Price

@@ -1,0 +1,17 @@
+{% extends '@SyliusAdmin/Form/theme.html.twig' %}
+
+
+{%- block choice_widget_expanded -%}
+    <div {{ block('widget_container_attributes') }}>
+        <div class="{% if required %}required {% endif %}grouped fields">
+            {%- for child in form %}
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        {{- form_label(child, null, {translation_domain: choice_translation_domain}) -}}
+                        {{- form_widget(child) -}}
+                    </div>
+                </div>
+            {% endfor -%}
+        </div>
+    </div>
+{%- endblock choice_widget_expanded -%}

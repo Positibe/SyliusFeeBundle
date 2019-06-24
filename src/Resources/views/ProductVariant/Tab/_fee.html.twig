@@ -1,0 +1,12 @@
+{#{% from '@SyliusAdmin/Macro/translationForm.html.twig' import translationFormWithSlug %}#}
+
+{% form_theme form.fees '@SyliusFeePlugin/Form/theme.html.twig' %}
+
+<div class="ui tab" data-tab="variant_fees">
+    <h3 class="ui dividing header">{{ 'sylius.ui.fees'|trans }}</h3>
+    {{ form_row(form.fees, {'label': false, 'attr': {'class': false}}) }}
+
+
+    {{ sonata_block_render_event('sylius.admin.product_variant.' ~ action ~ '.tab_fees', {'form': form}) }}
+</div>
+
